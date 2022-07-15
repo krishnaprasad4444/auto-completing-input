@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #1d1d37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 270px;
+  width: 400px;
+  position: relative;
+}
+
+.autocomplete-input {
+  padding: 25px 15px;
+  width: 100%;
+  border-radius: 1px;
+  border: none;
+  outline: none;
+  color: #48438f;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.autocomplete-input::placeholder {
+  color: #48438f;
+}
+
+.autocomplete-list {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  list-style-type: none;
+  background-color: #fff;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.autocomplete-list li {
+  color: #48438f;
+  padding: 15px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 0.5px solid hsla(244, 36%, 41%, 0.13);
+}
